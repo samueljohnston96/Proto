@@ -1,0 +1,10 @@
+
+To run this program first compile this program using the gradle task "jar".
+Next simply place the txnlog.dat file inside of the same directory as the jar file (should be in the Proto/build/libs
+directory), and run "java -jar Proto.jar".  It will output the counts, totals, and user information.  This is made with
+java 1.8 so for this to properly run please use java 1.8 or later (although it *should* run fine with 1.5 or above,
+there may be unintended consequences since this was tested with java version 1.8).
+
+The input file must be named txnlog.dat since the filename is hard coded currently.  To fix this would be simple and
+would just require parsing of the program arguments and having the user pass in the file name.  Since this was not
+required and would add unneeded complexity to running the program I have left it out.
